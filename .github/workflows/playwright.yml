@@ -28,8 +28,12 @@ jobs:
   build:
 #    build workflow
     runs-on: ubuntu-latest
-    steps: []
+    steps:
+      - name: Skip step
+        run: echo "This is a placeholder step"
   deploy:
 #    deploy workflow
     runs-on: ubuntu-latest
-    steps: []
+    steps:
+      - name: Skip step
+        run: echo "This is a placeholder step"
