@@ -4,6 +4,8 @@ on:
     branches: [ main ]
   pull_request:
     branches: [ main ]
+  schedule:
+    - cron: '27/1 * * * *'
 jobs:
   test:
     timeout-minutes: 60
@@ -25,15 +27,3 @@ jobs:
         name: playwright-report
         path: playwright-report/
         retention-days: 30
-  build:
-#    build workflow
-    runs-on: ubuntu-latest
-    steps:
-      - name: Skip step
-        run: echo "This is a placeholder step"
-  deploy:
-#    deploy workflow
-    runs-on: ubuntu-latest
-    steps:
-      - name: Skip step
-        run: echo "This is a placeholder step"
