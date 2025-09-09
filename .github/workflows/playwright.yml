@@ -25,3 +25,9 @@ jobs:
         name: playwright-report
         path: playwright-report/
         retention-days: 30
+  build:
+#    build workflow
+    runs-on: ubuntu-latest
+  deploy:
+#    deploy workflow
+    runs-on: ubuntu-latest
